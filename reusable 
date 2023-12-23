@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wildlife SriLanka </title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="_app" x-data="{}" class="core-frame h-screen overflow-hidden grid grid-cols-12 grid-rows-1">
+        <div class="primary-frame col-span-11 relative">
+            <header class="relative z-100">
+                <nav class="">
+                <ul class="text-white">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Wildlife Dept</a></li>
+                    <li><a href="#">Leopard</a></li>
+                    <li><a href="#">Our wildlife</a></li>
+                    <li><a href="#">Yala</a></li>
+                    <li><a href="#">Wilpattu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            </header>
+
+            <main>
+
+            </main>
+
+            <footer>
+
+            </footer>
+        </div>
+        <div class="navigation-frame col-span-1 bg-gradient-to-b from-sky-500 to-indigo-500">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
