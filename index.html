@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildlife SriLanka</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div id="_app" x-data="{}" class="core-frame h-screen overflow-hidden">
+<body class="bg-gray-100">
+
+    <div id="_app" x-data="{}" class="core-frame h-screen">
+
         <!-- Header Section -->
-        <div class="flex-container mx-auto text-white p-5 bg-gradient-to-b from-cyan-950 to-transparent">
+        <div class="bg-gradient-to-b from-cyan-950 to-transparent text-white p-5">
             <!-- Header Content -->
-            <header class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0">
                 <!-- Logo Section -->
                 <img src="/images/logo.png" alt="Department of Wildlife Conservation"
-                    class="object-contain w-24 md:w-32 lg:w-24 xl:w-32 md:object-scale-down sm:w-20">
+                    class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
                 <!-- Navigation Section -->
                 <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
                     <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
@@ -35,42 +37,79 @@
             </header>
         </div>
 
-        <main class="p-12">
+        <!-- Main Content -->
+        <main>
+            <!-- <div class="pt-20">
+                <h2 class="text-5xl font-bold align-middle ml-40">
+                   <span class="text-gray-300">Department of</span> <span class="underline decoration-sky-500 decoration-4 text-gray-300">Wildlife</span> <span class="text-gray-500">Conservation</span>
+                </h2>                
+                <div class="grid grid-rows-1 gap-4"> -->
+                <!-- Hero Section with Tagline -->
+                <!-- <div class="hero-section bg-gradient-to-r from-teal-500 to-emerald-500 text-white py-5">
+                    <div class="text-center">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Preserving Sri Lanka's Biodiversity</h1>
+                        <p class="text-base md:text-lg lg:text-xl mb-4">Conservation, Compassion, Coexistence</p>
+                        <!-- Add a call-to-action button or link here if desired -->
+                    <!-- </div>
+                </div> --> -->
+
+                    <div class="bg-transparent rounded-lg mt-48 mr-6 ml-3">
+                       <div class="text-2xl font-bold text-amber-300"> 485 elephants </div>
+                       <div class="text-base text-zinc-300">Roam Yala National Park</div>
+                    </div>
+                    <div class="grid grid-rows-1 gap-4 mt-1 mr-8 ml-3">
+                        <div class="bg-transparent rounded-lg">
+                           <div class="text-2xl font-bold text-amber-300"> 523 </div>
+                           <div class="text-base text-zinc-300"> Bird species </div>
+                        </div>
+                   <!-- </div> -->
+                <div class="flex align-left pl-2 pt-2">
+                    <button class="bg-white text-black-700 p-2 border-black-500 outline-2 rounded-full"> Read more >>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Add your main content here -->
         </main>
 
-        <footer class="flex bg-gradient-to-b from-cyan-900 via-transparent to-cyan-900 text-white p-20 pl-0">
-            <div class="grid grid-cols-1 gap-4 pl-4 md:object-scale-down">
-                <img src="images/logo.png" alt="Logo" class="w-full md:w-1/2 h-auto">
-                <p class="text-xs">The Department of Wildlife <br> Conservation Sri Lanka
-            </div>
-            <div class="grid gap-6 pl-20 pr-50 md:pr-20">
-                <p class="font-bold text-lg">Quick Links</p>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Wildlife Department</a></li>
-                    <li><a href="#">Leopard</a></li>
-                </ul>
-            </div>
-            <div class="grid gap-6 pr-20">
-                <p class="font-bold text-lg">Quick Links</p>
-                <ul>
-                    <li><a href="#">Our Wildlife</a></li>
-                    <li><a href="#">Yala</a></li>
-                    <li><a href="#">Wilpattu</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="grid gap-6 grid-cols-1 pr-20">
-                <p class="font-bold text-lg"> Socials </p>
-
-
-            </div>
-            <div class="grid gap-6 grid-cols-1">
-                <p class="font-bold text-lg"> Locate us </p>
+        <!-- Footer Section -->
+        <footer class="flex bg-gradient-to-b from-cyan-900 via-cyan-200 via-cyan-200 to-cyan-900 text-white p-20 pl-0">
+            <div
+                class="grid grid-cols-5 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                <div
+                    class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                    <img src="images/logo.png" alt="Logo" class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
+                    <p class="text-base md:text-xs">The Department of Wildlife <br> Conservation Sri Lanka</p>
+                </div>
+                <div
+                    class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                    <p class="font-bold text-lg">Quick Links</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Wildlife Department</a></li>
+                        <li><a href="#">Leopard</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                    <p class="font-bold text-lg">Quick Links</p>
+                    <ul>
+                        <li><a href="#">Our Wildlife</a></li>
+                        <li><a href="#">Yala</a></li>
+                        <li><a href="#">Wilpattu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                    <p class="font-bold text-lg"> Socials </p>
+                    <!-- Add content for social media links here -->
+                </div>
+                <div
+                    class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                    <p class="font-bold text-lg"> Locate us </p>
+                    <!-- Add content for locating information here -->
+                </div>
             </div>
         </footer>
-    </div>
-</body>
-
-</html>

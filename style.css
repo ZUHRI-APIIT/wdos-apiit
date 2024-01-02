@@ -6,7 +6,11 @@
 
 .core-frame {
     background-image: url('images/elephant.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+body {
+    margin: 0;
 }
