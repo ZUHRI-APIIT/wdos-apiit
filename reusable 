@@ -85,3 +85,37 @@ div class="grid">
                             </a>
                         </div>
                     </div>
+
+
+
+                      <!-- <div class="pt-20">
+                <h2 class="text-5xl font-bold align-middle ml-40">
+                   <span class="text-gray-300">Department of</span> <span class="underline decoration-sky-500 decoration-4 text-gray-300">Wildlife</span> <span class="text-gray-500">Conservation</span>
+                </h2>                
+                <div class="grid grid-rows-1 gap-4"> -->
+                <!-- Hero Section with Tagline -->
+                <!-- <div class="hero-section bg-gradient-to-r from-teal-500 to-emerald-500 text-white py-5">
+                    <div class="text-center">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Preserving Sri Lanka's Biodiversity</h1>
+                        <p class="text-base md:text-lg lg:text-xl mb-4">Conservation, Compassion, Coexistence</p>
+                        <!-- Add a call-to-action button or link here if desired -->
+                    <!-- </div>
+                </div> --> -->
+
+                <div class="bg-transparent rounded-lg mt-48 mr-6 ml-3">
+                    <div class="text-2xl font-bold text-amber-300"> 485 elephants </div>
+                    <div class="text-base text-zinc-300">Roam Yala National Park</div>
+                 </div>
+                 <div class="grid grid-rows-1 gap-4 mt-1 mr-8 ml-3">
+                     <div class="bg-transparent rounded-lg">
+                        <div class="text-2xl font-bold text-amber-300"> 523 </div>
+                        <div class="text-base text-zinc-300"> Bird species </div>
+                     </div>
+                <!-- </div> -->
+             <div class="flex align-left pl-2 pt-2">
+                 <button class="bg-white text-black-70 p-2 border-black-500 outline-2 rounded-full"> Read more >>
+                 </button>
+             </div>
+
+         </div>
+         <!-- Add your main content here -->
