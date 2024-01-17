@@ -5,63 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildlife SriLanka</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-    <div id="_app" x-data="{}">
-        <!-- Header Section -->
-        <div class="flex text-white  p-5 bg-gradient-to-b from-cyan-950 to-transparent">
-            <!-- Header Content -->
-            <header class="container flex flex-col md:flex-row items-center justify-between">
-                <!-- Logo Section -->
-                <img src="/images/logo.png" alt="Department of Wildlife Conservation"
-                    class="object-contain w-24 md:w-32 lg:w-24 xl:w-32 md:object-scale-down sm:w-20">
-                <!-- Navigation Section -->
-                <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
-                    <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="wildlife-department.html">Wildlife Department</a></li>
-                        <li><a href="leopard.html">Leopard</a></li>
-                        <li><a href="our-wildlife.html">Our wildlife</a></li>
-                        <li><a href="yala-park.html">Yala</a></li>
-                        <li><a href="wilpattu-park.html">Wilpattu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+<body class="bg-gray-100">
 
-        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div class="text-left text-lg text grid-cols-2">
-                1. Horton Plains National Park:
-                <div class="flex">
-                    <div class="w-full">
-                        <h3 class="list-disc break-words">Location: Central highlands, Nuwara Eliya district</h3>
-                    </div>
-                    <div class="w-full">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.674038567405!2d80.7997530111337!3d6.809445993159676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1704902994563!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="w-full">
-                        <p class="justify-center break-words">Immerse yourself in a mystical world of misty mountains, rolling grasslands, and crystal-clear waterfalls. Hike through the enchanting Baker's Falls trail, or witness the captivating sunrise over World's End, a sheer 1,270m precipice. Keep an eye out for sambar deer, elusive toque macaques, and the endemic purple-faced langur monkeys.
+    <div class="backdrop-blur-sm bg-black/30 text-white">
+
+        <!-- Header Section -->
+        <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0 backdrop-blur-xl p-4">
+            <!-- Logo Section -->
+            <img src="/images/logo.png" alt="Department of Wildlife Conservation"
+                class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
+            <!-- Navigation Section -->
+            <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
+                <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="animals.html">Animals in Sri Lanka</a></li>
+                    <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                    <li><a href="leopard.html">Leopard</a></li>
+                    <li><a href="our-wildlife.html">Our wildlife</a></li>
+                    <li><a href="yala-park.html">Yala</a></li>
+                    <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+        <!-- Main Content Section -->
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+
+                <!-- Card Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-gradient-to-r from-purple-800 via-violet-850 to-purple-900 text-white p-6 rounded-lg shadow-lg ">
+                        <h3 class="text-2xl font-semibold mb-4">1. Horton Plains National Park</h3>
+                        <p class="mb-4">Location: Central highlands, Nuwara Eliya district</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.674038567405!2d80.7997530111337!3d6.809445993159676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1704902994563!5m2!1sen!2slk"
+                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="mt-4">Immerse yourself in a mystical world of misty mountains, rolling grasslands, and
+                            crystal-clear waterfalls. Hike through the enchanting Baker's Falls trail, or witness the
+                            captivating sunrise over World's End, a sheer 1,270m precipice. Keep an eye out for sambar deer,
+                            elusive toque macaques, and the endemic purple-faced langur monkeys.
                         </p>
                     </div>
-                </div>
-                <div class="flex">
-                    <!-- Repeat the same structure for the second flex item -->
-                </div>
-            </div>
-        </main>
 
-        <footer class="flex bg-gradient-to-b from-cyan-900 via-cyan-200 via-cyan-200 to-cyan-900 text-white p-20 pl-0">
-            <div class="grid grid-cols-1 gap-4 pl-4 md:object-scale-down">
-                <img src="images/logo.png" alt="Logo" class="w-full md:w-1/2 h-auto">
-                <p class="text-xs">The Department of Wildlife <br> Conservation Sri Lanka
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-gradient-to-r from-purple-800 via-violet-850 to-purple-900 text-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4">2. Minneriya National Park</h3>
+                        <p class="mb-4">Location: North Central province, Polonnaruwa district</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31606.703364183562!2d80.80862141083986!3d8.015644300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb6009a20be05d%3A0xa4d046f2f06b05f5!2sMinneriya%20National%20Park!5e0!3m2!1sen!2slk!4v1705239399204!5m2!1sen!2slk"
+                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="mt-4">Witness the awe-inspiring "Gathering," where hundreds of Asian elephants congregate
+                            around the Minneriya reservoir during the dry season (June-October). Explore ancient ruins and
+                            lush forests, spotting sloth bears, leopard tortoises, and over 170 bird species.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-gradient-to-r from-purple-800 via-violet-850 to-purple-900 text-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4">3. Udawalawe National Park</h3>
+                        <p class="mb-4">Location: Sabaragamuwa province, Ratnapura district </p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3708038684454!2d80.87373871113117!3d6.474628793490134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1705239652444!5m2!1sen!2slk"
+                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="mt-4">Embark on a safari through pristine grasslands and witness the largest recorded wild
+                            elephant population in Sri Lanka. Observe herds grazing around the serene Udawalawe Reservoir,
+                            and keep an eye out for spotted deer, water buffaloes, and the majestic peacock.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Table -->
+                <div class="mt-10">
+                    <table class="w-full text-center">
+                        <thead class="bg-purple-400">
+                            <tr>
+                                <th class="px-4 py-2">Location</th>
+                                <th class="px-4 py-2">Animal</th>
+                                <th class="px-4 py-2">Interesting Facts</th>
+                                <th class="px-4 py-2">Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-4 py-2">Horton Plains</td>
+                                <td class="border px-4 py-2">Purple-faced Langur</td>
+                                <td class="border px-4 py-2">Endemic to Sri Lanka, these monkeys have distinctive purple skin
+                                    around their faces.</td>
+                                <td class="border px-4 py-2"><img src="images/our-wildlife-monkey.jpeg" alt="Purple-faced Langur"
+                                        class="w-20 h-20 mx-auto" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Minneriya</td>
+                                <td class="border px-4 py-2">Asian Elephant</td>
+                                <td class="border px-4 py-2">These gentle giants possess excellent memory and communicate
+                                    through
+                                    infrasound.</td>
+                                <td class="border px-4 py-2"><img src="images/our-wildlife-elephant.jpeg" alt="Asian Elephant"
+                                        class="w-20 h-20 mx-auto" /></td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Udawalawe	</td>
+                                <td class="border px-4 py-2">Sri Lankan Leopard	</td>
+                                <td class="border px-4 py-2">TAdaptable climbers and nocturnal hunters, leopards have rosettes that are unique to each individual.	
+                                </td>
+                                <td class="border px-4 py-2"><img src="images/our-wildlife-leopard.jpeg" alt="Sri Lankan leopard in Udawalawe"
+                                        class="w-20 h-20 mx-auto" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </body>
+
+    <!-- Footer Section -->
+    <footer class="flex backdrop-blur-xl bg-black/30 text-white p-20 pl-0 mt-10">
+        <div
+            class="grid grid-cols-5 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+            <div class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
+                <img src="images/logo.png" alt="Logo" class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
+                <p class="text-base md:text-xs">The Department of Wildlife <br> Conservation Sri Lanka
+                </p>
             </div>
-            <div class="grid gap-6 pl-20 pr-50 md:pr-20">
+            <div class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
                 <p class="font-bold text-lg">Quick Links</p>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -70,7 +149,7 @@
                     <li><a href="#">Leopard</a></li>
                 </ul>
             </div>
-            <div class="grid gap-6 pr-20">
+            <div class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
                 <p class="font-bold text-lg">Quick Links</p>
                 <ul>
                     <li><a href="#">Our Wildlife</a></li>
@@ -79,16 +158,15 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="grid gap-6 grid-cols-1 pr-20">
+            <div class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
                 <p class="font-bold text-lg"> Socials </p>
-
-
+                <!-- Social media links here -->
             </div>
-            <div class="grid gap-6 grid-cols-1">
+            <div class="grid 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
                 <p class="font-bold text-lg"> Locate us </p>
+                <!-- Location information here -->
             </div>
-        </footer>
-    </div>
-</body>
+        </div>
+    </footer>
 
 </html>

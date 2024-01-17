@@ -7,7 +7,6 @@
     <title>Wildlife SriLanka</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,7 +22,7 @@
                 <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
                     <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals in Sri Lanka</a></li>
                         <li><a href="wildlife-department.html">Wildlife Department</a></li>
                         <li><a href="leopard.html">Leopard</a></li>
                         <li><a href="our-wildlife.html">Our wildlife</a></li>
@@ -35,7 +34,51 @@
             </header>
         </div>
 
-        <main class="p-12">
+        <main>
+            <!DOCTYPE html>
+
+
+            <body class="bg-gray-100">
+            <header class="flex h-screen items-center justify-center bg-cover bg-no-repeat" style="background-image: url('images/elephant2.jpeg')">
+                <h1 class="text-5xl font-bold text-white text-center shadow-lg">Sri Lankan Wildlife Department: Guardians of Eden</h1>
+                <p class="text-xl text-white text-center mt-4">Protecting paradise, one creature at a time.</p>
+            </header>
+
+            <section class="container mx-auto px-4 py-16">
+                <h2 class="text-3xl font-bold mb-4">Sri Lanka's Crown Jewels: Protected Areas</h2>
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- Internal navigation for all cards -->
+                <a href="" class="card overflow-hidden rounded-lg shadow-lg hover:scale-105" id="sinharaja_rainforest">
+                    <img src="images/wildlife-department-sinharaja.jpeg" alt="Sinharaja Rainforest" class="object-fit h-full w-full">
+                    <div class="card-body p-4 text-center bg-gray-700 text-white">
+                    <h3 class="text-xl font-bold mb-2">Sinharaja Rainforest: Emerald Realm of Endemic Wonders</h3>
+                    <p class="text-base">Journey into a verdant Eden where ancient trees whisper secrets and rare creatures roam. Discover a symphony of life amidst cascading waterfalls, giant ferns, and vibrant plumage, as nature's orchestra serenades your soul. Sinharaja, Sri Lanka's living jewel, beckons you to explore its unparalleled biodiversity and embrace the wild beauty of the rainforest.</p>
+                    </div>
+                </a>
+                <a href="yala_national_park.html" class="card overflow-hidden rounded-lg shadow-lg hover:scale-105">
+                    <img src="images/wildlife-department-yala.jpeg" alt="Yala National Park" class="object-fit h-full w-full">
+                    <div class="card-body p-4 text-center bg-gray-700 text-white">
+                        <h3 class="text-xl font-bold mb-2">Yala National Park: Where Leopards Rule and Elephants Gather</h3>
+                        <p class="text-base">Venture into the golden grasslands where wild leopards stalk their prey and elephants roam in majestic herds. Yala beckons you to witness nature's raw power and exhilarating beauty. Feel the thrill of spotting a leopard basking in the sun, marvel at the Elephant Gathering during the dry season, and immerse yourself in a symphony of birdsongs as you explore this iconic sanctuary of Sri Lankan wildlife.</p>                  
+                    </div>
+                </a>
+                <a href="minneriya_national_park.html" class="card overflow-hidden rounded-lg shadow-lg hover:scale-105">
+                    <img src="images/wildlife-department-minneriya.jpeg" alt="Minneriya National Park" class="object-fit h-full w-full">
+                    <div class="card-body p-4 text-center bg-gray-700 text-white">
+                        <h3 class="text-xl font-bold mb-2">Minneriya National Park: A Majestic Gathering of Giants</h3>
+                        <p class="text-base">Prepare to be awestruck by the sight of hundreds of majestic Asian elephants gathering at the Minneriya reservoir. Witness a spectacle of nature as families of elephants bathe, play, and socialise against a backdrop of lush grasslands and serene wetlands. Journey into a realm where nature's gentle giants reign supreme, and discover the enchanting harmony of wildlife and ancient ruins that make Minneriya a true paradise for wildlife enthusiasts.</p>                                      
+                    </div>
+                </a>
+                </div>
+            </section>
+
+            <section class="container mx-auto px-4 py-16">
+                <h2 class="text-3xl font-bold mb-4">Find Us on the Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.14568280653!2d79.87538180464522!3d6.8884217988374745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705300561278!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map" class="h-96 border rounded-lg"></div>
+            </section>
+
+
         </main>
 
         <footer class="flex bg-gradient-to-b from-cyan-900 via-cyan-200 via-cyan-200 to-cyan-900 text-white p-20 pl-0">

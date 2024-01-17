@@ -8,6 +8,8 @@
     <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body class="bg-gray-100">
@@ -25,7 +27,7 @@
                 <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
                     <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals in Sri Lanka</a></li>
                         <li><a href="wildlife-department.html">Wildlife Department</a></li>
                         <li><a href="leopard.html">Leopard</a></li>
                         <li><a href="our-wildlife.html">Our wildlife</a></li>
@@ -36,166 +38,13 @@
                 </nav>
             </header>
         </div>
-
-        <!-- Main Content -->
-        <main>
-            <div class="flex justify-center"></div>
-            </div>
-            <!-- <div class="align-left">
-            <img src="images/Modern (1).png" alt="Fun Fact">
-            </div> -->
-
-            <div class="p-48">
-            </div>
-            <div class="p-20">
-            </div>
-            <div class="flex flex-wrap grid-cols-4">
-                <div class="px-24">
-
-                </div>
-                <div class="px-24">
-
-                </div>
-                <div class="bg-transparent rounded-lg mr-16 ml-4 cols-span-2 align-right pt-8">
-                    <div class="text-2xl font-bold text-amber-300"> 485 elephants </div>
-                    <div class="text-base text-zinc-300">Roam Yala National Park</div>
-                </div>
-                <div class="grid grid-rows-1 gap-4 mr-4 pt-8">
-                    <div class="bg-transparent rounded-lg">
-                        <div class="text-2xl font-bold text-amber-300"> 523 </div>
-                        <div class="text-base text-zinc-300"> Bird species </div>
-                    </div>
-                </div>
-
-                <div class="container mx-auto px-4 py-16">
-                    <!-- Main Container: Centers content and provides padding -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                        <!-- Grid Layout: Divides content into 1 column on small screens and 2 columns on larger screens with a gap of 8 units -->
-
-                        <!-- Leopard Card -->
-                        <div class="backdrop-blur-md bg-white/30 rounded-lg shadow p-6">
-                            <!-- Card Container: Provides a white background, rounded corners, and shadow for the card -->
-                            <img src="images/leopard.jpeg" alt="" class="w-80 h-auto rounded-lg shadow-md mb-4">
-                            <!-- Image: Displays the leopard image with specified width, height, and styling -->
-                            <h2 class="text-xl font-semibold mb-2">Leopard</h2>
-                            <!-- Heading: Specifies the title of the card with specified text styling -->
-                            <p class="mb-2">Yala National Park boasts the world's highest leopard density within a
-                                protected area, with an estimated 1 leopard per 3-5 km² (1.2-1.9 sq mi) in Block 1.</p>
-                            <!-- Paragraphs: Provide information about the leopard in Yala National Park -->
-                            <p class="mb-2">Wilpattu National Park also has a healthy leopard population, with an
-                                estimated density of 1 leopard per 8-12 km² (3.1-4.7 sq mi).</p>
-                            <p class="mb-2">Sri Lankan leopards are genetically distinct from mainland Asian leopards.
-                            </p>
-                        </div>
-
-                        <!-- Lion Card -->
-                        <div class="bg-white rounded-lg shadow p-6">
-                            <img src="images/lion.jpeg" alt="" class="w-80 h-auto rounded-lg shadow-md mb-4">
-                            <h2 class="text-xl font-semibold mb-2">Lion</h2>
-                            <p class="mb-2">It's important to clarify that lions are currently extinct in Sri Lanka.
-                                There are historical and cultural connections to lions in the island nation, but the
-                                last confirmed sighting of a lion dates back to the 1939 and the species is considered
-                                extinct locally.</p>
-                            <!-- Paragraphs: Provide information about the extinct lion species in Sri Lanka -->
-                            <p class="mb-2">Scientific name: Panthera leo sinhaleyus</p>
-                            <p class="mb-2">Nickname: Ceylonese lion</p>
-                            <p class="mb-2">Conservation efforts: While focused on protecting existing wildlife, the
-                                story of the Sri Lankan lion serves as a reminder of the importance of habitat
-                                conservation and preventing species extinction.</p>
-                        </div>
-
-                        <!-- Elephant Card -->
-                        <div class="bg-white rounded-lg shadow p-6">
-                            <img src="images/elephant2.jpeg" alt="" class="w-80 h-auto rounded-lg shadow-md mb-4">
-                            <h2 class="text-xl font-semibold mb-2">Elephant</h2>
-                            <p class="mb-2">485 elephants roam Yala National Park, one of the highest densities in the
-                                world.</p>
-                            <!-- Paragraphs: Provides information about the elephants in Yala National Park -->
-                            <p class="mb-2">Sri Lanka boasts the highest recorded tusk weight for an Asian elephant - a
-                                whopping 88.7 kg (195.5 lbs)!</p>
-                            <p class="mb-2">The island hosts two distinct elephant sub-species: the Sri Lankan elephant
-                                (Elephas maximus maximus) and the Indian elephant (Elephas maximus indicus).</p>
-                        </div>
-                        <div class="bg-white rounded-lg shadow p-6 h-42">
-                            <img src="" alt="" class="w-80 h-auto rounded-lg shadow-md mb-4">
-                            <h2 class="text-xl font-semibold mb-2">Excited to learn more?</h2>
-                            <p class="mb-2">We have some interesting information that would treat all you Animal lovers
-                            </p>
-                            <!-- Redirects to our wildlife page -->
-                            <button
-                                class="bg-white text-black-70 p-2 border-black-500 outline-2 rounded-full align-middle">
-                                Visit Our Wildlife >>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider
-                <div data-hs-carousel='{
-                    "loadingClasses": "opacity-0",
-                    "isAutoPlay": true
-                }' class="relative">
-                    <div class="hs-carousel relative overflow-hidden w-full min-h-[350px] bg-white rounded-lg">
-                        <div
-                            class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                            <div class="hs-carousel-slide">
-                                <div class="flex justify-center h-full bg-gray-100 p-6">
-                                    <span class="self-center text-4xl transition duration-700">First slide</span>
-                                </div>
-                            </div>
-                            <div class="hs-carousel-slide">
-                                <div class="flex justify-center h-full bg-gray-200 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Second slide</span>
-                                </div>
-                            </div>
-                            <div class="hs-carousel-slide">
-                                <div class="flex justify-center h-full bg-gray-300 p-6">
-                                    <span class="self-center text-4xl transition duration-700">Third slide</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <button type="button"
-                        class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
-                        <span class="text-2xl" aria-hidden="true">
-                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                            </svg>
-                        </span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button type="button"
-                        class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/[.1]">
-                        <span class="sr-only">Next</span>
-                        <span class="text-2xl" aria-hidden="true">
-                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                            </svg>
-                        </span>
-                    </button>
-
-                    <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
-                        <span
-                            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer">1</span>
-                        <span
-                            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer">2</span>
-                        <span
-                            class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer">3</span>
-                    </div>
-                </div>
-                End Slider -->
-
-
-
-        </main>
+        
+                    
+                    
+          
 
         <!-- Footer Section -->
-        <footer
-            class="flex backdrop-blur-xl bg-black/30 text-white p-20 pl-0 mt-10">
+        <footer class="flex backdrop-blur-xl bg-black/30 text-white p-20 pl-0 mt-10">
             <div
                 class="grid grid-cols-5 2xl:pr-20 2xl:pl-20 xl:pr-15 xl:pl-15 lg:pr-10 lg:pl-10 md:pr-5 md:pl-5 sm:pr-3 sm:pl-3">
                 <div
@@ -246,7 +95,7 @@
                 console.log(offsetHeight)
                 console.log(scrollTop)
 
-                if (scrollTop > 99) {
+                if (scrollTop > 150) {
                     body.style.backgroundImage = "url('images/bgwithouttext.svg')"; // Put the new image URL here
                     body.style.backgroundSize = "cover";
                     body.style.backgroundRepeat = "no-repeat";
