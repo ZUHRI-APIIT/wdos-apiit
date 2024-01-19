@@ -7,22 +7,24 @@
     <title>Wildlife SriLanka</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style-wildlife.css">
 </head>
 
 <body>
     <div id="_app" x-data="{}">
+
         <!-- Header Section -->
-        <div class="flex text-white  p-5 bg-gradient-to-b from-cyan-950 to-transparent">
+        <div class="backdrop-blur-xl bg-black/30 text-white w-full">
             <!-- Header Content -->
-            <header class="container flex flex-col md:flex-row items-center justify-between">
+            <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0 z-40">
                 <!-- Logo Section -->
-                <img src="/images/logo.png" alt="Department of Wildlife Conservation"
-                    class="object-contain w-24 md:w-32 lg:w-24 xl:w-32 md:object-scale-down sm:w-20">
+                <img src="/images/logo-1.png" alt="Department of Wildlife Conservation"
+                    class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
                 <!-- Navigation Section -->
                 <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
                     <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals in Sri Lanka</a></li>
                         <li><a href="wildlife-department.html">Wildlife Department</a></li>
                         <li><a href="leopard.html">Leopard</a></li>
                         <li><a href="our-wildlife.html">Our wildlife</a></li>
@@ -36,14 +38,6 @@
 
 
         <main class="container mx-auto">
-
-            <section class="hero-section bg-cover bg-center" style="background-image: url('yala-main.jpg');">
-              <div class="hero-text text-white text-center py-24">
-                <h1 class="text-4xl font-bold animate-pulse">Yala National Park: Where Giants Roam and Treasures Hide</h1>
-                <p class="text-lg">Encounter majestic elephants, elusive leopards, and a symphony of vibrant life in Sri Lanka's crown jewel.</p>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Unleash Your Yala Adventure</button>
-              </div>
-            </section>
           
             <section class="about-section py-16">
               <div class="container mx-auto">
@@ -63,12 +57,12 @@
                 <h2 class="text-3xl font-bold mb-4">Tailor-Made Adventures Await</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div class="animate-bounce">
-                    <img src="yala-safari.jpg" alt="Safari in Yala National Park" class="w-full rounded-lg">
+                    <img src="images/yala-safari.avif" alt="Safari in Yala National Park" class="w-full rounded-lg">
                     <h3 class="text-xl font-bold pt-4">Thrilling Safaris</h3>
                     <p class="text-base">Embark on jeep safaris across diverse landscapes, encountering iconic wildlife and hidden treasures.</p>
                   </div>
                   <div class="animate-fade-in-up">
-                    <img src="yala-birdwatching.jpg" alt="Birdwatching in Yala National Park" class="w-full rounded-lg">
+                    <img src="images/yala-birdwatching.jpeg" alt="Birdwatching in Yala National Park" class="w-full rounded-lg">
                     <h3 class="text-xl font-bold pt-4">Birder's Paradise</h3>
                     <p class="text-base">Discover over 200 bird species, from vibrant sunbirds to majestic eagles, in this avian sanctuary.</p>
                   </div>
@@ -77,30 +71,35 @@
             </section>
           
             <section class="wildlife-section py-16">
-              <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Meet the Faces of Yala</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="flex items-center justify-center">
-                    <img src="sloth-bear-yala.jpg" alt="Sloth Bear in Yala National Park" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold pt-4">Sloth Bear (Melursus ursinus)</h3>
-                    <p class="text-base">The honey-loving gentle giant, often spotted grazing on termite mounds.</p>
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-bold mb-4 text-center">Meet the Faces of Yala</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/yala-slothbear.avif" alt="Sloth Bear in Yala National Park" class="w-full rounded-lg mb-4">
+                            <h3 class="text-xl font-bold">Sloth Bear (Melursus ursinus)</h3>
+                            <p class="text-base text-center">The honey-loving gentle giant, often spotted grazing on termite mounds.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/yala-deer.jpeg" alt="Spotted Deer in Yala National Park" class="w-full rounded-lg mb-4">
+                            <h3 class="text-xl font-bold">Spotted Deer (Axis axis)</h3>
+                            <p class="text-base text-center">Graceful herbivores bounding through the grasslands, frequently seen in herds.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/yala-buffalo.avif" alt="Water Buffalo in Yala National Park" class="w-full rounded-lg mb-4">
+                            <h3 class="text-xl font-bold">Asian Water Buffalo (Bubalus bubalis)</h3>
+                            <p class="text-base text-center">Powerful beasts wallowing in waterholes, providing a vital role in the ecosystem.</p>
+                        </div>
+            
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/yala-crocodile.jpeg" alt="Crocodile in Yala National Park" class="w-full rounded-lg mb-4">
+                            <h3 class="text-xl font-bold">Mugger Crocodile (Crocodylus palustris)</h3>
+                            <p class="text-base text-center">Apex predators lurking in waterways, adding an element of thrilling caution to your exploration.</p>
+                        </div>
+            
                     </div>
-                    <div class="flex items-center justify-center">
-                    <img src="spotted-deer-yala.jpg" alt="Spotted Deer in Yala National Park" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold pt-4">Spotted Deer (Axis axis)</h3>
-                    <p class="text-base">Graceful herbivores bounding through the grasslands, frequently seen in herds.</p>
-                    </div>
-                    <div class="flex items-center justify-center">
-                    <img src="water-buffalo-yala.jpg" alt="Water Buffalo in Yala National Park" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold pt-4">Asian Water Buffalo (Bubalus bubalis)</h3>
-                    <p class="text-base">Powerful beasts wallowing in waterholes, providing a vital role in the ecosystem.</p>
-                    </div>
-                    <div class="flex items-center justify-center">
-                    <img src="crocodile-yala.jpg" alt="Crocodile in Yala National Park" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold pt-4">Mugger Crocodile (Crocodylus palustris)</h3>
-                    <p class="text-base">Apex predators lurking in waterways, adding an element of thrilling caution to your exploration.</p>
-                    </div>
-                </div>
                 </div>
             </section>
             
@@ -126,42 +125,46 @@
 
 
 
-        <footer class="flex bg-gradient-to-b from-cyan-900 via-cyan-200 via-cyan-200 to-cyan-900 text-white p-20 pl-0">
-            <div class="grid grid-cols-1 gap-4 pl-4 md:object-scale-down">
-                <img src="images/logo.png" alt="Logo" class="w-full md:w-1/2 h-auto">
-                <p class="text-xs">The Department of Wildlife <br> Conservation Sri Lanka
-            </div>
-            <div class="grid gap-6 pl-20 pr-50 md:pr-20">
-                <p class="font-bold text-lg">Quick Links</p>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Wildlife Department</a></li>
-                    <li><a href="#">Leopard</a></li>
-                </ul>
-            </div>
-            <div class="grid gap-6 pr-20">
-                <p class="font-bold text-lg">Quick Links</p>
-                <ul>
-                    <li><a href="#">Our Wildlife</a></li>
-                    <li><a href="#">Yala</a></li>
-                    <li><a href="#">Wilpattu</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="grid gap-6 grid-cols-1 pr-20">
-                <p class="font-bold text-lg"> Socials </p>
-
-
-            </div>
-            <div class="grid gap-6 grid-cols-1">
-                <p class="font-bold text-lg"> Locate us </p>
-            </div>
-                <div class="container mx-auto text-center">
-                  © 2024 Sri Lanka Wildlife
-                </div>
-        </footer>
-    </div>
-</body>
-
-</html>
+               <!-- Footer Section -->
+               <footer
+               class="flex flex-col items-center backdrop-blur-xl bg-black/30 text-white p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+               <div
+                   class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 2xl:pr-30 2xl:pl-30 xl:pr-20 xl:pl-20 lg:pr-15 lg:pl-15 md:pr-10 md:pl-10 sm:pr-5 sm:pl-5">
+                   <div class="flex flex-col items-center">
+                       <img src="images/logo-1.png" alt="Logo"
+                           class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down mb-2">
+                       <p class="text-xs text-center">The Department of Wildlife <br> Conservation Sri Lanka</p>
+                   </div>
+                   <div class="flex flex-col">
+                       <p class="font-bold text-lg mb-4">Quick Links</p>
+                       <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="animals.html">Animals in Sri Lanka</a></li>
+                           <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                           <li><a href="leopard.html">Leopard</a></li>
+                       </ul>
+                   </div>
+                   <div class="flex flex-col">
+                       <p class="font-bold text-lg mb-4">Quick Links</p>
+                       <ul>
+                           <li><a href="our-wildlife.html">Our Wildlife</a></li>
+                           <li><a href="yala-park.html">Yala</a></li>
+                           <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                       </ul>
+                   </div>
+                   <div class="flex flex-col items-left">
+                       <p class="font-bold text-lg mb-4">Locate us</p>
+                       <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.14568280653!2d79.87538180464522!3d6.8884217988374745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705300561278!5m2!1sen!2slk"
+                           width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade" class="mb-2"></iframe>
+                       <div id="map"></div>
+                   </div>
+               </div>
+               <div class="container mx-auto text-center">
+                   © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
+               </div>
+       </div>
+       </footer>
+    </html>

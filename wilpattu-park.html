@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife SriLanka</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style-wildlife.css">
+</head>
+
+<body>
+    <div id="_app" x-data="{}">
+
+        <!-- Header Section -->
+        <div class="backdrop-blur-xl bg-black/30 text-white w-full">
+            <!-- Header Content -->
+            <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0 z-40">
+                <!-- Logo Section -->
+                <img src="/images/logo-1.png" alt="Department of Wildlife Conservation"
+                    class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
+                <!-- Navigation Section -->
+                <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
+                    <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="animals.html">Animals in Sri Lanka</a></li>
+                        <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                        <li><a href="leopard.html">Leopard</a></li>
+                        <li><a href="our-wildlife.html">Our wildlife</a></li>
+                        <li><a href="yala-park.html">Yala</a></li>
+                        <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+
+
+                <!-- Footer Section -->
+                <footer
+                class="flex flex-col items-center backdrop-blur-xl bg-black/30 text-white p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 2xl:pr-30 2xl:pl-30 xl:pr-20 xl:pl-20 lg:pr-15 lg:pl-15 md:pr-10 md:pl-10 sm:pr-5 sm:pl-5">
+                    <div class="flex flex-col items-center">
+                        <img src="images/logo-1.png" alt="Logo"
+                            class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down mb-2">
+                        <p class="text-xs text-center">The Department of Wildlife <br> Conservation Sri Lanka</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-bold text-lg mb-4">Quick Links</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="animals.html">Animals in Sri Lanka</a></li>
+                            <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                            <li><a href="leopard.html">Leopard</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-bold text-lg mb-4">Quick Links</p>
+                        <ul>
+                            <li><a href="our-wildlife.html">Our Wildlife</a></li>
+                            <li><a href="yala-park.html">Yala</a></li>
+                            <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col items-left">
+                        <p class="font-bold text-lg mb-4">Locate us</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.14568280653!2d79.87538180464522!3d6.8884217988374745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705300561278!5m2!1sen!2slk"
+                            width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="mb-2"></iframe>
+                        <div id="map"></div>
+                    </div>
+                </div>
+                <div class="container mx-auto text-center">
+                    © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
+                </div>
+        </div>
+        </footer>
