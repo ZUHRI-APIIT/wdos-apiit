@@ -13,3 +13,14 @@ body{
     margin: 0 !important;
 }
 
+.space {
+    height: 100vh !important;
+}
+
+.customHeight {
+    height: 50vh;
+}
+
+span.numCustom {
+    text-align: left !important;
+}
