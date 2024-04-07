@@ -1,174 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wildlife SriLanka</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style-wildlife.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife Sri Lanka</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style-wildlife.css">
 </head>
 
 <body>
-    <div id="_app" x-data="{}">
+  <div id="_animals" x-data="_animals">
 
-        <!-- Header Section -->
-        <div class="backdrop-blur-xl bg-black/30 text-white w-full">
-            <!-- Header Content -->
-            <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0 z-40">
-                <!-- Logo Section -->
-                <img src="/images/logo-1.png" alt="Department of Wildlife Conservation"
-                    class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
-                <!-- Navigation Section -->
-                <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
-                    <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="animals.html">Animals in Sri Lanka</a></li>
-                        <li><a href="wildlife-department.html">Wildlife Department</a></li>
-                        <li><a href="leopard.html">Leopard</a></li>
-                        <li><a href="our-wildlife.html">Our wildlife</a></li>
-                        <li><a href="yala-park.html">Yala</a></li>
-                        <li><a href="wilpattu-park.html">Wilpattu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <!-- Header Section -->
+    <div class="backdrop-blur-xl bg-black/30 text-white w-full">
+      <!-- Header Content -->
+      <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0 z-40">
+        <!-- Logo Section -->
+        <img src="/images/logo-1.png" alt="Department of Wildlife Conservation"
+          class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
+        <!-- Navigation Section -->
+        <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
+          <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="animals.html">Animals in Sri Lanka</a></li>
+              <li><a href="wildlife_department.html">Wildlife Department</a></li>
+              <li><a href="leopard.html">Leopard</a></li>
+              <li><a href="our_wildlife.html">Our wildlife</a></li>
+              <li><a href="yala_park.html">Yala</a></li>
+              <li><a href="wilpattu_park.html">Wilpattu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+      </header>
+    </div>
+
+    <main>
+      <!-- section1 -->
+      <section class="container mx-auto px-4 py-16">
+        <h1 class="text-3xl font-bold text-center mb-8 animate-pulse" x-text="$store.animals.section1.title"></h1>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="flex flex-col items-center text-center md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 text-justify" x-text="$store.animals.section1.sub_title"></h2>
+            <p class="text-base" x-text="$store.animals.section1.body"></p>
+          </div>
+          <div class="flex flex-col items-center md:w-1/2">
+            <img src="images/animals-1.jpeg" alt="Sri Lanka Wildlife" class="object-cover w-full h-64 rounded-lg">
+          </div>
         </div>
 
-
-        <main>
-            <section class="container mx-auto px-4 py-16">
-                <h1 class="text-3xl font-bold text-center mb-8 animate-pulse">Embrace the Echo of Wild Sri Lanka</h1>
-                <div class="flex flex-col md:flex-row justify-center items-center">
-                  <div class="flex flex-col items-center text-center md:w-1/2">
-                    <h2 class="text-2xl font-bold mb-4 text-justify">Meet the Guardians of the Island's Soul</h2>
-                    <p class="text-base">Journey through emerald rainforests, golden grasslands, and ancient waterways to encounter a symphony of creatures unique to this island paradise.</p>
-                  </div>
-                  <div class="flex flex-col items-center md:w-1/2">
-                    <img src="images/animals-1.jpeg" alt="Sri Lanka Wildlife" class="object-cover w-full h-64 rounded-lg">
-                  </div>
-                </div>
-              
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-                  <div class="relative group">
-                    <img src="images/animals-5.webp" alt="Close-up of an elephant" class="object-cover w-full h-64 rounded-lg">
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black bg-opacity-75 transition-opacity duration-300 group-hover:opacity-0">
-                      <div class="flex items-center justify-center h-full px-4">
-                        <h3 class="text-white text-xl font-bold">Sloth Bear: Honeyed Hush</h3>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <div class="relative group">
-                    <img src="images/animals-3.jpeg" alt="Leopard in Wilpattu National Park" class="object-cover w-full h-64 rounded-lg">
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black bg-opacity-75 transition-opacity duration-300 group-hover:opacity-0">
-                      <div class="flex items-center justify-center h-full px-4">
-                        <h3 class="text-white text-xl font-bold">Spotted Deer: Dawnlight Dancers</h3>
-                      </div>
-                    </div>
-                  </div>
-            </section>
-            <section>
-
-                <!-- Section 1 (Yala and Elephants) -->
-                <div class="flex flex-col md:flex-row justify-center items-center">
-                  <div class="flex flex-col items-center text-center md:w-1/2 ml-4">
-                    <h2 class="text-2xl font-bold mb-4">Yala: Kingdom of Elephants</h2>
-                    <p class="text-base text-justify pr-6">
-                      Explore the mesmerizing landscapes of Yala, a kingdom where elephants roam in majestic herds.
-                      <br><br>
-                      Yala's golden grasslands come alive as the sun paints the plains. Witness herds of majestic elephants traversing the terrain, trumpeting greetings and showering playful water. Feel the earth tremble beneath their thunderous steps and admire the matriarch leading the way, her wisdom etched in wrinkled skin.
-                      <br><br>
-                      More than just giants, Yala shelters a kaleidoscope of creatures. Listen to the raucous calls of peacocks dancing in the sun, watch monkeys swing through the canopy with playful acrobatics, and spot crocodiles basking on the banks of shimmering lagoons.
-                    </p>
-                    <a href="yala-park.html">
-                        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                Discover Yala's Elephant Kingdom
-                            </span>
-                        </button>
-                    </a>
-                    
-                    
-                  </div>
-                  <div class="flex flex-col items-center md:w-1/2 ">
-                    <img src="images/animals-2.jpeg" alt="Elephant in Yala National Park" class="object-cover w-full h-64 rounded-lg">
-                  </div>
-                </div>
-              
-                <!-- Section 2 (Wilpattu and Leopards) -->
-                <div class="flex flex-col md:flex-row-reverse justify-center items-center mt-16">
-                  <div class="flex flex-col items-center md:w-1/2">
-                    <img src="images/animals-4.webp" alt="Leopard in Wilpattu National Park" class="object-cover w-full h-64 rounded-lg">
-                  </div>
-                  <div class="flex flex-col items-center text-center md:w-1/2 ml-4">
-                    <h2 class="text-2xl font-bold mb-4">Wilpattu: Realm of Leopards</h2>
-                    <p class="text-base text-justify pr-6 pb-4">
-                      Immerse yourself in the ancient forests of Wilpattu, where a thriving leopard population reigns supreme.
-                      <br><br>
-                      As dawn breaks over Wilpattu's ancient forests, the emerald embrace cloaks the landscape in a mystical veil. Lush vegetation whispers secrets carried on the wind, and ancient ruins peek through the leaves, remnants of forgotten kingdoms.
-                      <br><br>
-                      In this verdant labyrinth, leopards, the true rulers, camouflage with the dappled sunlight. Their movements are an almost undetectable dance of power. Be among the lucky few to witness their silent prowls, an encounter that leaves you humbled by the secrets the wilderness holds.
-                      <br><br>
-                      Wilpattu, known for its diverse wildlife, also offers a chance to spot the elusive black leopard, a majestic and rare creature blending seamlessly into the shadows.
-                    </p>
-                    <a href="wilpattu-park.html">
-                        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                Explore Wilpattu's Leopard Realm
-                            </span>
-                        </button>
-                    </a>                  </div>
-                </div>
-              
-              </section>
-              
-                  
-              
-        </main>
-
-        <!-- Footer Section -->
-        <footer
-            class="flex flex-col items-center backdrop-blur-xl bg-black/30 text-white p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+          <div class="relative group">
+            <img src="images/animals-5.webp" alt="Close-up of an elephant" class="object-cover w-full h-64 rounded-lg">
             <div
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 2xl:pr-30 2xl:pl-30 xl:pr-20 xl:pl-20 lg:pr-15 lg:pl-15 md:pr-10 md:pl-10 sm:pr-5 sm:pl-5">
-                <div class="flex flex-col items-center">
-                    <img src="images/logo-1.png" alt="Logo"
-                        class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down mb-2">
-                    <p class="text-xs text-center">The Department of Wildlife <br> Conservation Sri Lanka</p>
-                </div>
-                <div class="flex flex-col">
-                    <p class="font-bold text-lg mb-4">Quick Links</p>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="animals.html">Animals in Sri Lanka</a></li>
-                        <li><a href="wildlife-department.html">Wildlife Department</a></li>
-                        <li><a href="leopard.html">Leopard</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col">
-                    <p class="font-bold text-lg mb-4">Quick Links</p>
-                    <ul>
-                        <li><a href="our-wildlife.html">Our Wildlife</a></li>
-                        <li><a href="yala-park.html">Yala</a></li>
-                        <li><a href="wilpattu-park.html">Wilpattu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col items-left">
-                    <p class="font-bold text-lg mb-4">Locate us</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.14568280653!2d79.87538180464522!3d6.8884217988374745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705300561278!5m2!1sen!2slk"
-                        width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="mb-2"></iframe>
-                    <div id="map"></div>
-                </div>
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-black bg-opacity-75 transition-opacity duration-300 group-hover:opacity-0">
+              <div class="flex items-center justify-center h-full px-4">
+                <h3 class="text-white text-xl font-bold" x-text="$store.animals.imggrid1.title"></h3>
+              </div>
             </div>
-            <div class="container mx-auto text-center">
-                © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
+          </div>
+
+          <div class="relative group">
+            <img src="images/animals-3.jpeg" alt="Leopard in Wilpattu National Park"
+              class="object-cover w-full h-64 rounded-lg">
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-black bg-opacity-75 transition-opacity duration-300 group-hover:opacity-0">
+              <div class="flex items-center justify-center h-full px-4">
+                <h3 class="text-white text-xl font-bold" x-text="$store.animals.imggrid2.title"></h3>
+              </div>
             </div>
-    </div>
-    </footer>
+          </div>
+      </section>
+
+      <section>
+
+        <!-- Section 2 (Yala and Elephants) -->
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="flex flex-col items-center text-center md:w-1/2 ml-4">
+            <h2 class="text-2xl font-bold mb-4" x-text="$store.animals.section2.title"></h2>
+            <p class="text-base text-justify pr-6" x-text="$store.animals.section2.body">
+              <br><br>
+
+              <br><br>
+           
+            </p>
+            <a href="yala-park.html">
+              <button
+                class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                <span
+                  class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0" x-text="$store.animals.section2.button">
+
+                </span>
+              </button>
+            </a>
+
+
+          </div>
+          <div class="flex flex-col items-center md:w-1/2 ">
+            <img src="images/animals-2.jpeg" alt="Elephant in Yala National Park"
+              class="object-cover w-full h-64 rounded-lg">
+          </div>
+        </div>
+
+        <!-- Section 3 (Wilpattu and Leopards) -->
+        <div class="flex flex-col md:flex-row-reverse justify-center items-center mt-16">
+          <div class="flex flex-col items-center md:w-1/2">
+            <img src="images/animals-4.webp" alt="Leopard in Wilpattu National Park"
+              class="object-cover w-full h-64 rounded-lg">
+          </div>
+          <div class="flex flex-col items-center text-center md:w-1/2 ml-4">
+            <h2 class="text-2xl font-bold mb-4" x-text="$store.animals.section3.title"></h2>
+            <p class="text-base text-justify pr-6 pb-4" x-text="$store.animals.section3.body">
+
+              <br><br>
+              
+              <br><br>
+              
+              <br><br>
+              
+            </p>
+            <a href="wilpattu-park.html">
+              <button
+                class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                <span
+                  class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0" x-text="$store.animals.section3.button"> 
+                </span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+      class="flex flex-col items-center backdrop-blur-xl bg-black/30 text-white p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 2xl:pr-30 2xl:pl-30 xl:pr-20 xl:pl-20 lg:pr-15 lg:pl-15 md:pr-10 md:pl-10 sm:pr-5 sm:pl-5">
+        <div class="flex flex-col items-center">
+          <img src="images/logo-1.png" alt="Logo" class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down mb-2">
+          <p class="text-xs text-center">The Department of Wildlife <br> Conservation Sri Lanka</p>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-bold text-lg mb-4">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="animals.html">Animals in Sri Lanka</a></li>
+            <li><a href="wildlife-department.html">Wildlife Department</a></li>
+            <li><a href="leopard.html">Leopard</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-bold text-lg mb-4">Quick Links</p>
+          <ul>
+            <li><a href="our-wildlife.html">Our Wildlife</a></li>
+            <li><a href="yala-park.html">Yala</a></li>
+            <li><a href="wilpattu-park.html">Wilpattu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-left">
+          <p class="font-bold text-lg mb-4">Locate us</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.14568280653!2d79.87538180464522!3d6.8884217988374745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705300561278!5m2!1sen!2slk"
+            width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="mb-2"></iframe>
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="container mx-auto text-center">
+        © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
+      </div>
+
+      <script src="js/animals.js"></script>
+  </div>
+  </footer>
 
 </html>

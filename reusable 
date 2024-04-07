@@ -119,3 +119,203 @@ div class="grid">
 
          </div>
          <!-- Add your main content here -->
+
+         <!DOCTYPE html>
+         <html lang="en">
+         
+         <head>
+             <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Wildlife SriLanka</title>
+             <script src="https://unpkg.com/alpinejs" defer></script>
+             <script src="https://cdn.tailwindcss.com"></script>
+             <link rel="stylesheet" href="style.css">
+             <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                 integrity="sha384-VfKD1q4jROtqdfuBQUGdAY7aNfHtOV7F96Ew/MGmh5t3fFFlD+2gFnISckvT+nN" crossorigin="anonymous">
+         
+             <link rel="stylesheet"
+                 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+         </head>
+         
+         <body class="bg-gray-100">
+         
+             <div id="_app" x-data="app" class="core-frame h-screen">
+         
+                 <!-- Header Section -->
+                 <div class="backdrop-blur-xl bg-black/30 text-white w-full">
+                     <!-- Header Content -->
+                     <header class="container mx-auto flex flex-col md:flex-row items-center justify-between sticky top-0">
+                         <!-- Logo Section -->
+                         <img src="images/logo-1.png" alt="Department of Wildlife Conservation"
+                             class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down">
+                         <!-- Navigation Section -->
+                         <nav class="items-center space-x-4 mt-4 md:mt-0 md:ml-4">
+                             <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="animals.html">Animals in Sri Lanka</a></li>
+                                 <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                                 <li><a href="leopard.html">Leopard</a></li>
+                                 <li><a href="our-wildlife.html">Our wildlife</a></li>
+                                 <li><a href="yala-park.html">Yala</a></li>
+                                 <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                             </ul>
+                         </nav>
+                     </header>
+                 </div>
+         
+                 <main>
+                     <div class="space">
+                     </div>
+         
+                     <div class="container mx-auto mt-8 flex flex-wrap justify-around customHeight">
+                         <!-- Elephant Card -->
+                         <template x-for="(card, index) in cards" :key="index">
+                             <div x-on:mouseover="showDetails(index)" x-on:mouseleave="showDetails(index)"
+                                 class="card relative overflow-hidden rounded-lg shadow-lg text-justify group w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-1">
+                                 <img :src="card.image" alt="Sri Lankan Elephant" class="object-cover h-full">
+                                 <div
+                                     class="card-body absolute bottom-0 left-0 p-4 text-left text-white backdrop-blur-xl bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                     <h2 class="text-2xl font-semibold mb-4">{{ card.title }}</h2>
+                                     <p class="text-white">{{ card.description }}</p>
+                                     <p class="text-blue-500 mt-2">{{ card.fact }}</p>
+                                 </div>
+                             </div>
+                         </template>
+                     </div>
+         
+                     <div class="relative h-96 mt-12 text-left">
+                         <!-- Video Background -->
+                         <video class="object-cover w-full h-full absolute inset-0" autoplay muted loop>
+                             <source src="images/srilanka.mp4" type="video/mp4">
+                             <!-- Add other video source formats if needed -->
+                         </video>
+         
+                         <!-- Content Overlay -->
+                         <div
+                             class="absolute backdrop-blur-sm inset-0 bg-black/50 flex flex-col justify-center items-center text-white">
+                             <div class="container mx-auto">
+                                 <!-- Title -->
+                                 <h1 class="text-5xl font-bold mb-8">Interesting Facts</h1>
+                                 <hr />
+         
+                                 <!-- Facts as Bullet Points with Icons -->
+                                 <ul class="text-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+                                     <template x-for="(fact, index) in facts" :key="index">
+                                         <li class="mb-4 text-xl text-white/80 items-center ">
+                                             <span :class="['material-symbols-outlined', 'text-5xl', fact.icon]"></span><br>
+                                             {{ fact.text }}
+                                         </li>
+                                     </template>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+         
+                     <div class="relative h-96 bg-gradient-to-r from-indigo-950 to-violet-950">
+                         <!-- Content Overlay -->
+                         <div class="absolute backdrop-blur-sm inset-0 flex flex-col justify-center items-center text-white">
+                             <div class="container mx-auto">
+                                 <!-- Title -->
+                                 <h1 class="text-5xl font-bold mb-8 text-center">Wildife Activities.</h1>
+         
+                                 <!-- Facts as Bullet Points with Icons -->
+                                 <ul class="text-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-15">
+                                     <template x-for="(activity, index) in activities" :key="index">
+                                         <li class="mb-4 text-xl text-white/80 items-center ">
+                                             <span class="text-5xl numCustom">{{ activity.number }}</span><br>
+                                             {{ activity.text }}
+                                         </li>
+                                     </template>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+         
+         
+                 </main>
+         
+                 <!-- Footer Section -->
+                 <footer
+                     class="flex flex-col items-center backdrop-blur-xl bg-black/30 text-white p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+                     <div
+                         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 2xl:pr-30 2xl:pl-30 xl:pr-20 xl:pl-20 lg:pr-15 lg:pl-15 md:pr-10 md:pl-10 sm:pr-5 sm:pl-5">
+                         <div class="flex flex-col items-center">
+                             <img src="images/logo-1.png" alt="Logo"
+                                 class="w-20 md:w-32 lg:w-24 xl:w-32 md:object-scale-down mb-2">
+                             <p class="text-xs text-center">The Department of Wildlife <br> Conservation Sri Lanka</p>
+                         </div>
+                         <div class="flex flex-col">
+                             <p class="font-bold text-lg mb-4">Quick Links</p>
+                             <ul>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="animals.html">Animals in Sri Lanka</a></li>
+                                 <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                                 <li><a href="leopard.html">Leopard</a></li>
+                             </ul>
+                         </div>
+                         <div class="flex flex-col">
+                             <p class="font-bold text-lg mb-4">Quick Links</p>
+                             <ul>
+                                 <li><a href="our-wildlife.html">Our Wildlife</a></li>
+                                 <li><a href="yala-park.html">Yala</a></li>
+                                 <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                             </ul>
+                         </div>
+                         <div class="flex flex-col items-left">
+                             <p class="font-bold text-lg mb-4">Locate us</p>
+                             <iframe
+                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.14568280653!2d79.87538180464522!3d6.8884217988374745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705300561278!5m2!1sen!2slk"
+                                 width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                 referrerpolicy="no-referrer-when-downgrade" class="mb-2"></iframe>
+                             <div id="map"></div>
+                         </div>
+                     </div>
+                     <div class="container mx-auto text-center">
+                         © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
+                     </div>
+                 </footer>
+         
+         
+         
+                 <script>
+                     window.onscroll = function () {
+                         var body = document.body;
+                         var html = document.documentElement;
+                         var scrollTop = window.scrollY || document.documentElement.scrollTop;
+                         var offsetHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+         
+                         console.log(offsetHeight)
+                         console.log(scrollTop)
+         
+                         if (scrollTop > 150) {
+                             body.style.backgroundImage = "url('images/bgwithouttext.svg')"; // Put the new image URL here
+                             body.style.backgroundSize = "cover";
+                             body.style.backgroundRepeat = "no-repeat";
+                             body.style.backgroundPosition = "center";
+                             body.style.backgroundAttachment = "fixed";
+                             body.style.transition = "0.1s ease-in"
+                         } else {
+                             // Reset to the original background image or remove these lines if not needed
+                             body.style.backgroundImage = "";
+                             body.style.backgroundSize = "";
+                             body.style.backgroundRepeat = "";
+                             body.style.backgroundPosition = "";
+                             body.style.backgroundAttachment = "";
+                         }
+                     };
+                 </script>
+         
+          <script src="js/home.js"></script>
+         
+             </body>
+         
+             </html>
+         
+            
+         
+
+
+

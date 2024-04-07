@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="_app" x-data="{}">
+    <div id="_leopard" x-data="_leopard">
 
         <!-- Header Section -->
         <div class="backdrop-blur-xl bg-black/30 text-white w-full">
@@ -25,11 +25,11 @@
                     <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="animals.html">Animals in Sri Lanka</a></li>
-                        <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                        <li><a href="wildlife_department.html">Wildlife Department</a></li>
                         <li><a href="leopard.html">Leopard</a></li>
-                        <li><a href="our-wildlife.html">Our wildlife</a></li>
-                        <li><a href="yala-park.html">Yala</a></li>
-                        <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                        <li><a href="our_wildlife.html">Our wildlife</a></li>
+                        <li><a href="yala_park.html">Yala</a></li>
+                        <li><a href="wilpattu_park.html">Wilpattu</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -37,58 +37,65 @@
         </div>
 
         <main>
+            <!-- section 1 -->
             <section class="container mx-auto px-4 py-16">
-                <h1 class="text-3xl font-bold text-center mb-8">Sri Lankan Leopards: Guardians of the Emerald Isle</h1>
+                <h1 class="text-3xl font-bold text-center mb-8"  x-text="$store.leopard.section1.title"></h1>
               
-                <h2 class="text-2xl font-bold mb-4">Where to Witness the Elusive Kings of the Wild</h2>
+                <h2 class="text-2xl font-bold mb-4"  x-text="$store.leopard.section1.sub_title"></h2>
               
+                <!-- leopard card 1 -->
                 <div class="grid grid-cols-3 gap-6">
                     <div class="card rounded-lg overflow-hidden shadow-md hover:scale-105">
                         <img src="images/leopard-yala.jpeg" alt="Sri Lankan Leopard basking in Yala National Park" class="object-cover h-64 w-auto"> 
-                        <h3 class="text-xl font-bold mb-2">Yala National Park: Land of Golden Grasslands and Leopard Prowess</h3>
-                        <p class="text-base">Journey into the heart of Sri Lanka's wilderness, where majestic leopards stalk the golden plains. Yala beckons you with thrilling safaris, promising glimpses of these elusive hunters at dawn or dusk. Witness their power and grace as they navigate the vast landscapes, sharing the stage with elephants, sloth bears, and vibrant birdlife.</p>
+                        <h3 class="text-xl font-bold mb-2" x-text="$store.leopard.leopard_card1.sub_title"></h3>
+                        <p class="text-base" x-text="$store.leopard.leopard_card1.body"></p>
                     </div>
-        
+
+                    <!-- leopard card 2 -->
                     <div class="card rounded-lg overflow-hidden shadow-md hover:scale-105">
                         <img src="images/leopard-wilpattu.jpeg" alt="Sri Lankan Leopard emerging from Wilpattu National Park" class="object-cover h-64 w-auto">
                         <div class="card-body p-4">
-                            <h3 class="text-xl font-bold mb-2">Wilpattu National Park: Untamed Beauty and Leopard Enclaves</h3>
-                            <p class="text-base">Embark on an adventure through Wilpattu's vast plains and shimmering tanks, where leopards reign supreme. This sanctuary offers unparalleled chances to observe these solitary cats, camouflaged against the golden grasslands. Immerse yourself in the park's unique biodiversity, home to spotted deer, sambar deer, and a treasure trove of endemic reptiles.</p>
+                            <h3 class="text-xl font-bold mb-2" x-text="$store.leopard.leopard_card2.sub_title"></h3>
+                            <p class="text-base" x-text="$store.leopard.leopard_card2.body"></p>
                         </div>
                     </div>
-        
+
+                    <!-- leopard card 3 -->
                     <div class="card rounded-lg overflow-hidden shadow-md hover:scale-105">
                         <img src="images/leopard-hortonplains.jpeg" alt="Sri Lankan Leopard camouflaged in Horton Plains National Park" class="object-cover h-64 w-auto">
                         <div class="card-body p-4">
-                            <h3 class="text-xl font-bold mb-2">Horton Plains National Park: Misty Mountains and Serene Leopard Sightings</h3>
-                            <p class="text-base">Ascend to the cool embrace of Horton Plains, where leopards dance amidst the mist-shrouded grasslands and vibrant rhododendron forests. Though encounters are less frequent, spotting a leopard in this ethereal landscape is a once-in-a-lifetime experience. Discover a diverse haven of endemic flora and fauna, including purple-faced langurs and graceful storks.</p>
+                            <h3 class="text-xl font-bold mb-2" x-text="$store.leopard.leopard_card3.sub_title"></h3>
+                            <p class="text-base" x-text="$store.leopard.leopard_card3.body"></p>
                         </div>
                     </div>
                 </div>
             </section>        
               
+            <!-- leopard card 4 -->
                     <div class="card rounded-lg p-4 shadow-md border border-gray-200">
-                    <h3 class="text-xl font-bold mb-2">Vanishing Emerald Homes: Habitat Loss and Fragmentation</h3>
+                    <h3 class="text-xl font-bold mb-2"  x-text="$store.leopard.leopard_card4.sub_title"></h3>
                     <img src="images/leopard-fence.jpeg" alt="Sri Lankan Leopard crossing a fragmented landscape" class="object-cover mb-4 w-full h-48 rounded-lg">
-                    <p class="text-base">The emerald tapestry of Sri Lanka is unraveling as forests shrink and landscapes become fragmented. This loss of habitat cripples the leopards' hunting grounds, disrupts their movement patterns, and isolates populations, pushing them towards vulnerability.</p>
-                    <p class="text-base font-light">**Consequences:**</p>
+                    <p class="text-base" x-text="$store.leopard.leopard_card4.body"></p>
+                    <p class="text-base font-light" x-text="$store.leopard.leopard_card4.body2"></p>
                     <ul class="list-disc pl-4">
                       <li>Reduced prey availability</li>
                       <li>Increased competition among leopards</li>
                       <li>Isolation of populations, leading to genetic problems and reduced resilience</li>
                     </ul>
                     </div>                  
+
+                    <!-- leopard card 5 --> 
                     <div class="card rounded-lg p-4 shadow-md border border-gray-200">
-                        <h3 class="text-xl font-bold mb-2">Clashing with Humanity: Human-Leopard Conflict</h3>
+                        <h3 class="text-xl font-bold mb-2" x-text="$store.leopard.leopard_card5.sub_title"></h3>
                         <img src="images/leopard-village.jpeg" alt="Sri Lankan Leopard near a village settlement" class="object-cover mb-4 w-full h-48 rounded-lg">
-                        <p class="text-base">As human settlements encroach on leopard territories and livestock becomes readily available, tensions rise, leading to conflict. This can involve livestock depredation by leopards, often resulting in retaliatory killings, further endangering the leopard population.</p>
-                        <p class="text-base font-light">**Consequences:**</p>
+                        <p class="text-base" x-text="$store.leopard.leopard_card5.body"></p>
+                        <p class="text-base font-light" x-text="$store.leopard.leopard_card5.body2"></p>
                         <ul class="list-disc pl-4">
                           <li>Loss of leopards due to retaliatory killings and fear.</li>
                           <li>Fear and anxiety among communities living in proximity to leopards.</li>
                           <li>Potential for retaliatory attacks on humans, though rare.</li>
                         </ul>
-                        <p class="text-base font-light">**Mechanisms to reduce conflict:**</p>
+                        <p class="text-base font-light" x-text="$store.leopard.leopard_card5.body3"></p>
                         <ul class="list-disc pl-4">
                           <li>Awareness programs for communities on leopard behavior, coexistence strategies, and safety measures.</li>
                           <li>Livestock protection measures, including strong enclosures, deterrents, and improved management practices.</li>
@@ -137,6 +144,8 @@
             <div class="container mx-auto text-center">
                 © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
             </div>
+            <script src="js/leopard.js"></script>
+
     </div>
     </footer>
 

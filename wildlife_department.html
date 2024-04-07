@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="_app" x-data="{}">
+    <div id="_wildlife_department" x-data="_wildlife_department">
 
         <!-- Header Section -->
         <div class="backdrop-blur-xl bg-black/30 text-white w-full">
@@ -25,11 +25,11 @@
                     <ul class="flex flex-col md:flex-row md:space-x-4 md:items-center">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="animals.html">Animals in Sri Lanka</a></li>
-                        <li><a href="wildlife-department.html">Wildlife Department</a></li>
+                        <li><a href="wildlife_department.html">Wildlife Department</a></li>
                         <li><a href="leopard.html">Leopard</a></li>
-                        <li><a href="our-wildlife.html">Our wildlife</a></li>
-                        <li><a href="yala-park.html">Yala</a></li>
-                        <li><a href="wilpattu-park.html">Wilpattu</a></li>
+                        <li><a href="our_wildlife.html">Our wildlife</a></li>
+                        <li><a href="yala_park.html">Yala</a></li>
+                        <li><a href="wilpattu_park.html">Wilpattu</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -37,19 +37,18 @@
         </div>
 
         <main>
-
+            <!-- section 1 -->
             <body class="bg-gray-100">
                 <div class="flex h-screen items-center justify-center bg-cover bg-no-repeat"
                     style="background-image: url('images/elephant2.jpeg')">
-                    <h2 class="text-5xl font-bold text-white text-center shadow-lg">Sri Lankan Wildlife Department:
-                        Guardians of Eden</h2>
-                    <h3 class="text-xl text-white text-center">Protecting paradise, one creature at a time.</h3>
+                    <h2 class="text-5xl font-bold text-white text-center shadow-lg" x-text="$store.wildlife_department.section1.title"></h2>
+                    <h3 class="text-xl text-white text-center" x-text="$store.wildlife_department.section1.sub_title"></h3>
                 </div>
             </body>
 
-
+            <!-- section 2 -->
             <section class="container mx-auto px-4 py-16">
-                <h2 class="text-3xl font-bold mb-4">Sri Lanka's Crown Jewels: Protected Areas</h2>
+                <h2 class="text-3xl font-bold mb-4" x-text="$store.wildlife_department.section2.title"></h2>
                 <div class="grid grid-cols-3 gap-6 ">
                     <div class="card relative overflow-hidden rounded-lg shadow-lg text-justify group"
                         id="sinharaja_rainforest customCard">
@@ -57,34 +56,25 @@
                             class="object-fit h-full w-full">
                         <div
                             class="card-body absolute bottom-0 left-0 p-5 text-left text-white backdrop-blur-xl bg-black/30 custom opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="text-xl font-bold mb-2">Sinharaja Rainforest: Emerald Realm of Endemic
-                                Wonders</h3>
-                            <p class="text-base">Journey into a verdant Eden where ancient trees whisper secrets and
-                                rare creatures roam. Discover a symphony of life amidst cascading waterfalls, giant
-                                ferns, and vibrant plumage, as nature's orchestra serenades your soul. Sinharaja,
-                                Sri Lanka's living jewel, beckons you to explore its unparalleled biodiversity and
-                                embrace the wild beauty of the rainforest.</p>
+                            <h3 class="text-xl font-bold mb-2" x-text="$store.wildlife_department.section2.sub_title"></h3>
+                            <p class="text-base" x-text="$store.wildlife_department.section2.body"></p>
                         </div>
                     </div>
 
-
+                     <!-- section 3 -->
                     <div class="card relative overflow-hidden rounded-lg shadow-lg text-justify group"
                         id="sinharaja_rainforest customCard">
                         <img src="images/wildlife-department-yala.jpeg" alt="Yala National Park"
                             class="object-fit h-full w-full">
                         <div
                             class="card-body absolute bottom-0 left-0 p-5 text-left text-white backdrop-blur-xl bg-black/30 custom opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="text-xl font-bold mb-2">Yala National Park: Where Leopards Rule and Elephants
-                                Gather</h3>
-                            <p class="text-base">Venture into the golden grasslands where wild leopards stalk their
-                                prey and elephants roam in majestic herds. Yala beckons you to witness nature's raw
-                                power and exhilarating beauty. Feel the thrill of spotting a leopard basking in the
-                                sun, marvel at the Elephant Gathering during the dry season, and immerse yourself in
-                                a symphony of birdsongs as you explore this iconic sanctuary of Sri Lankan wildlife.
+                            <h3 class="text-xl font-bold mb-2" x-text="$store.wildlife_department.section3.sub_title"></h3>
+                            <p class="text-base" x-text="$store.wildlife_department.section3.body">
                             </p>
                         </div>
                     </div>
 
+                     <!-- section 4 -->
                     <div class="card relative overflow-hidden rounded-lg shadow-lg text-justify group"
                         id="sinharaja_rainforest customCard">
                         <img src="images/wildlife-department-minneriya.jpeg" alt="Minneriya National Park"
@@ -92,14 +82,8 @@
                         <div
                             class="card-body absolute bottom-0 left-0 p-5 text-left text-white backdrop-blur-xl bg-black/30 custom opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 
-                            <h3 class="text-xl font-bold mb-2">Minneriya National Park: A Majestic Gathering of
-                                Giants</h3>
-                            <p class="text-base">Prepare to be awestruck by the sight of hundreds of majestic Asian
-                                elephants gathering at the Minneriya reservoir. Witness a spectacle of nature as
-                                families of elephants bathe, play, and socialise against a backdrop of lush
-                                grasslands and serene wetlands. Journey into a realm where nature's gentle giants
-                                reign supreme, and discover the enchanting harmony of wildlife and ancient ruins
-                                that make Minneriya a true paradise for wildlife enthusiasts.</p>
+                            <h3 class="text-xl font-bold mb-2" x-text="$store.wildlife_department.section4.sub_title"></h3>
+                            <p class="text-base" x-text="$store.wildlife_department.section4.body"></p>
                         </div>
                     </div>
                 </div>
@@ -156,6 +140,7 @@
             <div class="container mx-auto text-center">
                 © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
             </div>
+        <script src="js/wildlife_department.js"></script>
     </div>
     </footer>
 
