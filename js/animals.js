@@ -33,27 +33,3 @@ document.addEventListener('alpine:init', () => {
         
     });
 });
-
-// document.addEventListener('alpine:init', () => {
-//     Alpine.store('animals', {
-//         section1: {
-//             title: 'Embrace the Echo of Wild Sri Lanka',
-//             sub_title: "Meet the Guardians of the Island's Soul",
-//             intro: "Journey through emerald rainforests, golden grasslands, and ancient waterways to encounter a symphony of creatures unique to this island paradise.",
-//             image: "images/animals-1.jpeg",
-//             imageAlt: "Sri Lanka Wildlife",
-//             animals: [
-//                 {
-//                     image: "images/animals-5.webp",
-//                     alt: "Close-up of an elephant",
-//                     caption: "Sloth Bear: Honeyed Hush"
-//                 },
-//                 {
-//                     image: "images/animals-3.jpeg",
-//                     alt: "Leopard in Wilpattu National Park",
-//                     caption: "Spotted Deer: Dawnlight Dancers"
-//                 }
-//             ]
-//         }
-//     });
-// });

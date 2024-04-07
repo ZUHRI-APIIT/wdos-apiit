@@ -5,23 +5,20 @@ document.addEventListener('alpine:init', () => {
           title: 'Explore the World of Sri Lankan Elephants',
           sub_title: 'Learn about their complex social structures, playful interactions, and vital role in shaping ecosystems.',
           body: "Did you know? Sri Lanka boasts the highest density of Asian elephants in the world, with over 5,000 individuals.",
-          // image: '/images/kotiya.jpeg',
-          // link: '#',
+          
       },
       leopard_card: {
           title: 'Embark on a Thrilling Quest for Sri Lankan Leopards',
           sub_title: 'Discover their incredible hunting skills, solitary nature, and vital role in maintaining ecological balance.',
           body: "Interesting fact: The Sri Lankan leopard is a unique subspecies, smaller than its African counterparts.",
-          // image: '/images/kotiya.jpeg',
-          // link: '#',
+        
       },
 
       bird_card: {
           title: 'Symphony of Feathers: Sri Lankas Bird Kingdom',
           sub_title: 'Immerse yourself in the symphony of Sri Lankas bird kingdom, where over 450 species paint the skies with their colors and fill the air with their songs.',
           body: "Fun fact: Sri Lanka is a birder's paradise, boasting several endemic species found nowhere else on Earth.",
-          // image: '/images/kotiya.jpeg',
-          // link: '#',
+          
       },
 
       list1: {

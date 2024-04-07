@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="_app" x-data="{}">
+    <div id="_wilpattu_park" x-data="_wilpattu_park">
 
         <!-- Header Section -->
         <div class="backdrop-blur-xl bg-black/30 text-white w-full">
@@ -39,11 +39,11 @@
 
         <main class="container mx-auto">
 
-            <!-- Content Section for Wilpattu National Park -->
+            <!-- Section 1 -->
             <section class="about-section py-16">
                 <div class="container mx-auto">
-                    <h2 class="text-3xl font-bold mb-4">Discover the Mysteries of Wilpattu</h2>
-                    <p class="text-base">Wilpattu National Park, with its sprawling landscapes and diverse ecosystems, is a sanctuary for numerous species. Explore the wonders of this untamed wilderness and witness the beauty of nature in its rawest form.</p>
+                    <h2 class="text-3xl font-bold mb-4" x-text="$store.wilpattu_park.section1.title"></h2>
+                    <p class="text-base" x-text="$store.wilpattu_park.section1.sub_title"></p>
                     <ul class="list-disc px-4 mt-4">
                         <li>Home to a rich variety of flora and fauna, Wilpattu boasts a unique and vibrant ecosystem.</li>
                         <li>Roam the vast expanses and encounter fascinating wildlife, from majestic elephants to elusive leopards.</li>
@@ -53,68 +53,72 @@
                 </div>
             </section>
 
-            <!-- Experiences Section for Wilpattu National Park -->
+            <!-- Section 2 -->
             <section class="experiences-section py-16">
                 <div class="container mx-auto">
-                    <h2 class="text-3xl font-bold mb-4">Tailor-Made Adventures in Wilpattu</h2>
+                    <h2 class="text-3xl font-bold mb-4" x-text="$store.wilpattu_park.section2.title"></h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Card 1 -->
                         <div class="animate-pulse">
                             <img src="images/wilpattu-safari.webp" alt="Safari in Wilpattu National Park"
                                 class="w-full rounded-lg">
-                            <h3 class="text-xl font-bold pt-4">Thrilling Safaris</h3>
-                            <p class="text-base">Embark on jeep safaris through the heart of Wilpattu, where each turn may reveal a new wildlife spectacle.</p>
+                            <h3 class="text-xl font-bold pt-4" x-text="$store.wilpattu_park.card1.title"></h3>
+                            <p class="text-base" x-text="$store.wilpattu_park.card1.body"></p>
                         </div>
+                        <!-- Card 2 -->
                         <div class="animate-fade-in-up">
                             <img src="images/wilpattu-birdwatching.jpeg" alt="Birdwatching in Wilpattu National Park"
                                 class="w-full rounded-lg">
-                            <h3 class="text-xl font-bold pt-4">Avian Paradise</h3>
-                            <p class="text-base">Delight in the diverse birdlife of Wilpattu, with its feathered residents ranging from colorful songbirds to impressive raptors.</p>
+                            <h3 class="text-xl font-bold pt-4" x-text="$store.wilpattu_park.card2.title"></h3>
+                            <p class="text-base" x-text="$store.wilpattu_park.card2.body"></p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Wildlife Section for Wilpattu National Park -->
+            <!-- Section 3 -->
             <section class="wildlife-section py-16">
                 <div class="container mx-auto">
-                    <h2 class="text-3xl font-bold mb-4 text-center">Meet the Inhabitants of Wilpattu</h2>
+                    <h2 class="text-3xl font-bold mb-4 text-center" x-text="$store.wilpattu_park.section3.title"></h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        
+                        <!-- Card 3 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/wilpattu-leopard.jpeg" alt="Leopard in Wilpattu National Park"
                                 class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Sri Lankan Leopard (Panthera pardus kotiya)</h3>
-                            <p class="text-base text-center">The apex predator of Wilpattu, known for its elusive nature and striking coat patterns.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.wilpattu_park.card3.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.wilpattu_park.card3.body"></p>
                         </div>
+
+                        <!-- Card 4 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/wilpattu-peafowl.jpeg" alt="Indian Peafowl in Wilpattu National Park"
                                 class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Indian Peafowl (Pavo cristatus)</h3>
-                            <p class="text-base text-center">Witness the vibrant display of peafowls, the colorful gems of Wilpattu's avian population.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.wilpattu_park.card4.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.wilpattu_park.card4.body"></p>
                         </div>
+
+                        <!-- Card 5 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/wilpattu-elephant.jpeg" alt="Asian Elephant in Wilpattu National Park"
                                 class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Asian Elephant (Elephas maximus)</h3>
-                            <p class="text-base text-center">Observe the gentle giants roaming the landscapes, a symbol of Wilpattu's ecological richness.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.wilpattu_park.card5.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.wilpattu_park.card5.body"></p>
                         </div>
-                    </div>
                 </div>
             </section>
 
-            <!-- Plan Your Visit Section for Wilpattu National Park -->
+            <!-- Section 4 -->
             <section class="plan-your-visit-section py-16">
                 <div class="container mx-auto">
-                    <h2 class="text-3xl font-bold mb-4">Plan Your Wilpattu Adventure</h2>
-                    <p class="text-base">Prepare for an unforgettable journey with these essential details:</p>
+                    <h2 class="text-3xl font-bold mb-4" x-text="$store.wilpattu_park.section4.title"></h2>
+                    <p class="text-base" x-text="$store.wilpattu_park.section4.sub_title"></p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="flex items-center justify-center">
-                            <svg class="w-10 h-10 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5 2a1 1 0 00-1 1v1h14V3a1 1 0 00-1-1H5zm5 8a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm2 3a1 1 0 100 2h2a1 1 0 100-2H9zm-5 3a1 1 0 100 2h2a1 1 0 100-2H4z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <h3 class="text-xl font-bold pt-4">Best Time to Visit</h3>
-                            <p class="text-base">Optimal months for visiting Wilpattu are from February to October, with dry weather and increased wildlife sightings.</p>
+
+                            <!-- Section 5 -->
+                            <h3 class="text-xl font-bold pt-4" x-text="$store.wilpattu_park.section5.title"></h3>
+                            <p class="text-base" x-text="$store.wilpattu_park.section5.sub_title"></p>
                         </div>
                     </div>
                 </div>
@@ -164,5 +168,6 @@
                 <div class="container mx-auto text-center">
                     © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
                 </div>
+            <script src="js/wilpattu_park.js"></script>
         </div>
         </footer>

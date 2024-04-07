@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
+
 <body class="bg-gray-100">
 
      <div id="_home" x-data="_home" class="core-frame h-screen"> <!--home() = dynamic data object -->
@@ -38,8 +39,41 @@
                         <li><a href="yala_park.html">Yala</a></li>
                         <li><a href="wilpattu_park.html">Wilpattu</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li x-show="!loggedIn"><a href="login.html" @click="login">Login</a></li>
+                        <li x-show="loggedIn" @click.away="loggedIn = false">
+                            <div class="relative">
+                                <button @click="toggleDropdown" class="flex items-center space-x-1 focus:outline-none">
+                                    <span>{{ username }}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm8-6a6 6 0 00-6 6c0 2.135 1.371 4.252 3.276 5.654a1 1 0 101.448-1.382A4.002 4.002 0 018 10c0-2.209 1.791-4 4-4a4.003 4.003 0 013.275 1.654 1 1 0 101.448-1.382A6 6 0 0010 4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div x-show="dropdown" class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10" @click.away="dropdown = false">
+                                    <a href="index.html" @click="logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
+                <script>
+                    window._home = {
+                        loggedIn: false,
+                        username: 'User',
+                        dropdown: false,
+                        login() {
+                            this.loggedIn = true;
+                        },
+                        logout() {
+                            this.loggedIn = false;
+                        },
+                        toggleDropdown() {
+                            this.dropdown = !this.dropdown;
+                        }
+                    }
+                </script>
             </header>
         </div>
 
@@ -190,7 +224,7 @@
                     <ul>
                         <li><a href="our_wildlife.html">Our Wildlife</a></li>
                         <li><a href="yala_park.html">Yala</a></li>
-                        <li><a href="wilpattu_park.html">Wilpattu</a></li>
+                        <li><a href="wilpattupark.html">Wilpattu</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>

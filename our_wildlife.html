@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <div id="_app" x-data="{}">
+    <div id="_our_wildlife" x-data="_our_wildlife">
+
 
         <!-- Header Section -->
         <div class="backdrop-blur-xl bg-black/30 text-white w-full">
@@ -46,46 +47,39 @@
                     <!-- Card 1 -->
                     <div
                         class="bg-gradient-to-r from-purple-800 via-violet-850 to-purple-900 text-white p-6 rounded-lg shadow-lg ">
-                        <h3 class="text-2xl font-semibold mb-4">1. Horton Plains National Park</h3>
-                        <p class="mb-4">Location: Central highlands, Nuwara Eliya district</p>
+                        <h3 class="text-2xl font-semibold mb-4"  x-text="$store.our_wildlife.card1.title"></h3>
+                        <p class="mb-4" x-text="$store.our_wildlife.card1.sub_title"></p>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.674038567405!2d80.7997530111337!3d6.809445993159676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1704902994563!5m2!1sen!2slk"
                             width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p class="mt-4">Immerse yourself in a mystical world of misty mountains, rolling grasslands, and
-                            crystal-clear waterfalls. Hike through the enchanting Baker's Falls trail, or witness the
-                            captivating sunrise over World's End, a sheer 1,270m precipice. Keep an eye out for sambar deer,
-                            elusive toque macaques, and the endemic purple-faced langur monkeys.
+                        <p class="mt-4" x-text="$store.our_wildlife.card1.body">
                         </p>
                     </div>
 
                     <!-- Card 2 -->
                     <div
                         class="bg-gradient-to-r from-purple-800 via-violet-850 to-purple-900 text-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-4">2. Minneriya National Park</h3>
-                        <p class="mb-4">Location: North Central province, Polonnaruwa district</p>
+                        <h3 class="text-2xl font-semibold mb-4"  x-text="$store.our_wildlife.card2.title"></h3>
+                        <p class="mb-4" x-text="$store.our_wildlife.card2.sub_title"></p>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31606.703364183562!2d80.80862141083986!3d8.015644300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb6009a20be05d%3A0xa4d046f2f06b05f5!2sMinneriya%20National%20Park!5e0!3m2!1sen!2slk!4v1705239399204!5m2!1sen!2slk"
                             width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p class="mt-4">Witness the awe-inspiring "Gathering," where hundreds of Asian elephants congregate
-                            around the Minneriya reservoir during the dry season (June-October). Explore ancient ruins and
-                            lush forests, spotting sloth bears, leopard tortoises, and over 170 bird species.
+                        <p class="mt-4" x-text="$store.our_wildlife.card2.body">
                         </p>
                     </div>
 
                     <!-- Card 3 -->
                     <div
                         class="bg-gradient-to-r from-purple-800 via-violet-850 to-purple-900 text-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-semibold mb-4">3. Udawalawe National Park</h3>
-                        <p class="mb-4">Location: Sabaragamuwa province, Ratnapura district </p>
+                        <h3 class="text-2xl font-semibold mb-4" x-text="$store.our_wildlife.card3.title"></h3>
+                        <p class="mb-4" x-text="$store.our_wildlife.card3.sub_title"> </p>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3708038684454!2d80.87373871113117!3d6.474628793490134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1705239652444!5m2!1sen!2slk"
                             width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p class="mt-4">Embark on a safari through pristine grasslands and witness the largest recorded wild
-                            elephant population in Sri Lanka. Observe herds grazing around the serene Udawalawe Reservoir,
-                            and keep an eye out for spotted deer, water buffaloes, and the majestic peacock.
+                        <p class="mt-4" x-text="$store.our_wildlife.card3.body">
                         </p>
                     </div>
 
@@ -123,7 +117,7 @@
                             <tr>
                                 <td class="border px-4 py-2">Udawalawe	</td>
                                 <td class="border px-4 py-2">Sri Lankan Leopard	</td>
-                                <td class="border px-4 py-2">TAdaptable climbers and nocturnal hunters, leopards have rosettes that are unique to each individual.	
+                                <td class="border px-4 py-2">Adaptable climbers and nocturnal hunters, leopards have rosettes that are unique to each individual.	
                                 </td>
                                 <td class="border px-4 py-2"><img src="images/our-wildlife-leopard.jpeg" alt="Sri Lankan leopard in Udawalawe"
                                         class="w-20 h-20 mx-auto" /></td>
@@ -174,6 +168,8 @@
            <div class="container mx-auto text-center">
                © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
            </div>
+           <script src="js/our_wildlife.js"></script>
+
    </div>
    </footer>
 

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="_app" x-data="{}">
+    <div id="_yala_park" x-data="_yala_park">
 
         <!-- Header Section -->
         <div class="backdrop-blur-xl bg-black/30 text-white w-full">
@@ -38,11 +38,12 @@
 
 
         <main class="container mx-auto">
-          
+
+          <!-- Section 1 -->
             <section class="about-section py-16">
               <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Unveiling a Kingdom of Biodiversity</h2>
-                <p class="text-base">Yala National Park is a tapestry woven with golden grasslands, ancient forests, and shimmering lagoons. This ecological haven shelters over 44 mammal species, 215 bird species, and countless reptiles and amphibians. Here, nature's pulse quickens, and every turn unveils a new wonder.</p>
+                <h2 class="text-3xl font-bold mb-4" x-text="$store.yala_park.section1.title"></h2>
+                <p class="text-base" x-text="$store.yala_park.section1.body"></p>
                 <ul class="list-disc px-4 mt-4">
                   <li>Witness elephants traversing the plains, their matriarchs leading the way with stoic wisdom.</li>
                   <li>Catch a glimpse of the elusive leopard, its stealthy movements cloaked in dappled sunlight.</li>
@@ -52,68 +53,76 @@
               </div>
             </section>
           
+            <!-- Section 2 -->
             <section class="experiences-section py-16">
               <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Tailor-Made Adventures Await</h2>
+                <h2 class="text-3xl font-bold mb-4" x-text="$store.yala_park.section2.title"></h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div class="animate-pulse">
+                    <!-- Card 1 -->
                     <img src="images/yala-safari.avif" alt="Safari in Yala National Park" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold pt-4">Thrilling Safaris</h3>
-                    <p class="text-base">Embark on jeep safaris across diverse landscapes, encountering iconic wildlife and hidden treasures.</p>
+                    <h3 class="text-xl font-bold pt-4" x-text="$store.yala_park.card1.title"></h3>
+                    <p class="text-base" x-text="$store.yala_park.card1.body"></p>
                   </div>
-                  <div class="animate-fade-in-up">
+                    <!-- Card 2 -->
+                    <div class="animate-fade-in-up">
                     <img src="images/yala-birdwatching.jpeg" alt="Birdwatching in Yala National Park" class="w-full rounded-lg">
-                    <h3 class="text-xl font-bold pt-4">Birder's Paradise</h3>
-                    <p class="text-base">Discover over 200 bird species, from vibrant sunbirds to majestic eagles, in this avian sanctuary.</p>
+                    <h3 class="text-xl font-bold pt-4" x-text="$store.yala_park.card2.title"></h3>
+                    <p class="text-base" x-text="$store.yala_park.card2.body"></p>
                   </div>
                 </div>
               </div>
             </section>
           
+            <!-- Section 3 -->
+
             <section class="wildlife-section py-16">
                 <div class="container mx-auto">
-                    <h2 class="text-3xl font-bold mb-4 text-center">Meet the Faces of Yala</h2>
+                    <h2 class="text-3xl font-bold mb-4 text-center" x-text="$store.yala_park.section3.title"></h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
+                        <!-- Card 3 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/yala-slothbear.avif" alt="Sloth Bear in Yala National Park" class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Sloth Bear (Melursus ursinus)</h3>
-                            <p class="text-base text-center">The honey-loving gentle giant, often spotted grazing on termite mounds.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.yala_park.card3.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.yala_park.card3.body"></p>
                         </div>
             
+                        <!-- Card 4 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/yala-deer.jpeg" alt="Spotted Deer in Yala National Park" class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Spotted Deer (Axis axis)</h3>
-                            <p class="text-base text-center">Graceful herbivores bounding through the grasslands, frequently seen in herds.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.yala_park.card4.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.yala_park.card4.body"></p>
                         </div>
             
+                        <!-- Card 5 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/yala-buffalo.avif" alt="Water Buffalo in Yala National Park" class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Asian Water Buffalo (Bubalus bubalis)</h3>
-                            <p class="text-base text-center">Powerful beasts wallowing in waterholes, providing a vital role in the ecosystem.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.yala_park.card5.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.yala_park.card5.body"></p>
                         </div>
             
+                        <!-- Card 6 -->
                         <div class="flex flex-col items-center justify-center">
                             <img src="images/yala-crocodile.jpeg" alt="Crocodile in Yala National Park" class="w-full rounded-lg mb-4">
-                            <h3 class="text-xl font-bold">Mugger Crocodile (Crocodylus palustris)</h3>
-                            <p class="text-base text-center">Apex predators lurking in waterways, adding an element of thrilling caution to your exploration.</p>
+                            <h3 class="text-xl font-bold" x-text="$store.yala_park.card6.sub_title"></h3>
+                            <p class="text-base text-center" x-text="$store.yala_park.card6.body"></p>
                         </div>
             
                     </div>
                 </div>
             </section>
             
+            <!-- Section 4 -->
             <section class="plan-your-visit-section py-16">
                 <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Plan Your Yala Adventure</h2>
-                <p class="text-base">Make the most of your experience with these essential details:</p>
+                <h2 class="text-3xl font-bold mb-4" x-text="$store.yala_park.section4.title"></h2>
+                <p class="text-base" x-text="$store.yala_park.section4.sub_title"></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Section 5 -->
                     <div class="flex items-center justify-center">
-                    <svg class="w-10 h-10 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M5 2a1 1 0 00-1 1v1h14V3a1 1 0 00-1-1H5zm5 8a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm2 3a1 1 0 100 2h2a1 1 0 100-2H9zm-5 3a1 1 0 100 2h2a1 1 0 100-2H4z" clip-rule="evenodd" />
-                    </svg>
-                    <h3 class="text-xl font-bold pt-4">Best Time to Visit</h3>
-                    <p class="text-base">December to May offers dry weather and optimal wildlife viewing. However, June to August is ideal for birdwatching.</p>
+                    <h3 class="text-xl font-bold pt-4" x-text="$store.yala_park.section5.title"></h3>
+                    <p class="text-base" x-text="$store.yala_park.section5.sub_title"></p>
                     </div>
                     </div>
                 </div>
@@ -165,6 +174,8 @@
                <div class="container mx-auto text-center">
                    © 2024 Sri Lanka Wildlife - Developed by Zuhri Ashroff
                </div>
+            <script src="js/yala_park.js"></script>
+
        </div>
        </footer>
     </html>
