@@ -1,4 +1,3 @@
-
 document.addEventListener('alpine:init', () => {
   Alpine.store('home', {
       elephant_card: {
